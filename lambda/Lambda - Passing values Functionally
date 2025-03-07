@@ -1,0 +1,11 @@
+interface addable{
+    int addition(int a,int b);
+}
+
+public class LambdaPassValues {
+    public static void main(String[] args) {
+        addable add=(int a,int b)-> (a+b);
+        int val=add.addition(10, 10);
+        System.out.print(val);
+    }
+}
