@@ -1,0 +1,8 @@
+Usually, method is always belongs to a class where it belongs to. But in Lambda it does not belongs to any class or object.
+Lambda function has no name
+It also has no paramter list
+It also has no body
+It also has no return type
+
+Eg:
+  withLambdaD = (int a,int b) -> (a+b);
