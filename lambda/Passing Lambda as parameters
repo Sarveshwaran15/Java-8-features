@@ -1,0 +1,33 @@
+Instead of statically defining the methods we can use the parameter concepts to execute the code run time itself.
+
+Eg:
+
+interface Shape{
+    public void draw();
+}
+
+public class LambdaExpression 
+{
+    public static void main(String[] args) {
+        Shape rectangle= () -> {
+            System.out.println("Rectangle class called");
+        };
+       // rectangle.draw(); -- no need because we are using lambda as a parameter at the run time
+        Shape square=()->{
+            System.out.println("Square class called");
+        };
+       // square.draw();
+        Shape triangle = () ->{
+            System.out.println("Triangle class called");
+        };
+       // triangle.draw();
+       parameterLambda(rectangle);  // this is where the function passed as a parameter
+       parameterLambda(triangle);
+       parameterLambda(square);
+
+    }
+    public static void parameterLambda(Shape shape)
+    {
+        shape.draw();
+    }
+}
