@@ -1,0 +1,7 @@
+In this java 8 features these are the core features,
+  Lambda Expressions
+  Functional Interfaces and Predefined Functional Interfaces
+  Method References and Types of Method References
+  Optional class to avoid NullPointerExceptions
+  Default and Static Methods in Interfaces
+  Stream API - filter, map, sorting, finding, collecting.
